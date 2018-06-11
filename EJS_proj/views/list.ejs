@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+     <title> My to-do list </title>
+</head>
+
+<body>
+     <% for(var i=0; i<groceries.length; i++){ %>
+     <h1> <%= groceries[i].store %> Inventory </h1>
+     <ul>
+          <% groceries[i].list.forEach(function(item, index){ %>
+               <li><%= item %></li>
+          <% }); %>
+     </ul>
+     <% }; %>
+</body>
+
+</html>
