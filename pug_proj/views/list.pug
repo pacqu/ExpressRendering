@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title list
+  body
+    h1= "Groceries List"
+    each store_list in todo.groceries
+      h1= store_list.store
+      ul
+        each thing in store_list.list
+          li= thing
