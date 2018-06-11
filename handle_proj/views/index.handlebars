@@ -1,0 +1,11 @@
+<h1>Groceries List</h1>
+{{#each todo}}
+<h1>{{store}}</h1>
+<ul>
+{{#with list as |toBuy|}}
+{{#each toBuy}}
+<li> {{this}} </li>
+{{/each}}
+{{/with}}
+</ul>
+{{/each}}
